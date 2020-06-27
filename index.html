@@ -1,96 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>State and local Government areas in Nigeria (dropdown)</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-    />
 
-    <style>
-      html,
-      body {
-        height: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container h-100">
-      <div class="row align-items-center h-100">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-          <center>
-            <form>
-              <div class="form-group">
-                <label class="control-label">State of Origin</label>
-                <select
-                  onchange="toggleLGA(this);"
-                  name="state"
-                  id="state"
-                  class="form-control"
-                >
-                  <option value="" selected="selected">- Select -</option>
-                  <option value="Abia">Abia</option>
-                  <option value="Adamawa">Adamawa</option>
-                  <option value="AkwaIbom">AkwaIbom</option>
-                  <option value="Anambra">Anambra</option>
-                  <option value="Bauchi">Bauchi</option>
-                  <option value="Bayelsa">Bayelsa</option>
-                  <option value="Benue">Benue</option>
-                  <option value="Borno">Borno</option>
-                  <option value="Cross River">Cross River</option>
-                  <option value="Delta">Delta</option>
-                  <option value="Ebonyi">Ebonyi</option>
-                  <option value="Edo">Edo</option>
-                  <option value="Ekiti">Ekiti</option>
-                  <option value="Enugu">Enugu</option>
-                  <option value="FCT">FCT</option>
-                  <option value="Gombe">Gombe</option>
-                  <option value="Imo">Imo</option>
-                  <option value="Jigawa">Jigawa</option>
-                  <option value="Kaduna">Kaduna</option>
-                  <option value="Kano">Kano</option>
-                  <option value="Katsina">Katsina</option>
-                  <option value="Kebbi">Kebbi</option>
-                  <option value="Kogi">Kogi</option>
-                  <option value="Kwara">Kwara</option>
-                  <option value="Lagos">Lagos</option>
-                  <option value="Nasarawa">Nasarawa</option>
-                  <option value="Niger">Niger</option>
-                  <option value="Ogun">Ogun</option>
-                  <option value="Ondo">Ondo</option>
-                  <option value="Osun">Osun</option>
-                  <option value="Oyo">Oyo</option>
-                  <option value="Plateau">Plateau</option>
-                  <option value="Rivers">Rivers</option>
-                  <option value="Sokoto">Sokoto</option>
-                  <option value="Taraba">Taraba</option>
-                  <option value="Yobe">Yobe</option>
-                  <option value="Zamfara">Zamafara</option>
-                </select>
-              </div>
+<head>
+	<title>States and Local Government Areas in Nigeria (Dropdown)</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+		integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous">
+	<style>
+		html,
+		body {
+			height: 100%;
+		}
+	</style>
+</head>
 
-              <div class="form-group">
-                <label class="control-label">LGA of Origin</label>
-                <select
-                  name="lga"
-                  id="lga"
-                  class="form-control select-lga"
-                  required
-                >
-                </select>
-              </div>
-            </form>
-          </center>
-        </div>
-        <div class="col-md-4"></div>
-      </div>
-    </div>
+<body>
+	<div class="container">
+		<div class="row align-items-center justify-content-center" style="min-height: 100vh;">
+			<div class="col-12 p-4" style="max-width: 400px;">
+				<h1 class="text-dark text-center my-5" style="font-size: 1.5rem;">States and Local Government Areas in
+					Nigeria (Dropdown)</h1>
+				<form>
+					<div class="form-group">
+						<label class="control-label">State of Origin</label>
+						<select onchange="toggleLGA(this);" name="state" id="state" class="form-control">
+							<option value="" selected="selected">- Select -</option>
+							<option value="Abia">Abia</option>
+							<option value="Adamawa">Adamawa</option>
+							<option value="AkwaIbom">AkwaIbom</option>
+							<option value="Anambra">Anambra</option>
+							<option value="Bauchi">Bauchi</option>
+							<option value="Bayelsa">Bayelsa</option>
+							<option value="Benue">Benue</option>
+							<option value="Borno">Borno</option>
+							<option value="Cross River">Cross River</option>
+							<option value="Delta">Delta</option>
+							<option value="Ebonyi">Ebonyi</option>
+							<option value="Edo">Edo</option>
+							<option value="Ekiti">Ekiti</option>
+							<option value="Enugu">Enugu</option>
+							<option value="FCT">FCT</option>
+							<option value="Gombe">Gombe</option>
+							<option value="Imo">Imo</option>
+							<option value="Jigawa">Jigawa</option>
+							<option value="Kaduna">Kaduna</option>
+							<option value="Kano">Kano</option>
+							<option value="Katsina">Katsina</option>
+							<option value="Kebbi">Kebbi</option>
+							<option value="Kogi">Kogi</option>
+							<option value="Kwara">Kwara</option>
+							<option value="Lagos">Lagos</option>
+							<option value="Nasarawa">Nasarawa</option>
+							<option value="Niger">Niger</option>
+							<option value="Ogun">Ogun</option>
+							<option value="Ondo">Ondo</option>
+							<option value="Osun">Osun</option>
+							<option value="Oyo">Oyo</option>
+							<option value="Plateau">Plateau</option>
+							<option value="Rivers">Rivers</option>
+							<option value="Sokoto">Sokoto</option>
+							<option value="Taraba">Taraba</option>
+							<option value="Yobe">Yobe</option>
+							<option value="Zamfara">Zamafara</option>
+						</select>
+					</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="js/lga.min.js"></script>
-  </body>
+					<div class="form-group">
+						<label class="control-label">LGA of Origin</label>
+						<select name="lga" id="lga" class="form-control select-lga" required>
+						</select>
+					</div>
+				</form>
+				<footer class="row mt-5 align-items-center justify-content-center">
+					<div class="col-12">
+						<p class="text-center">
+							Made with <span class="fas fa-heart text-danger"></span> by <a
+								href="https://dekpangsapp.in/" class="">Ekpang Michael</a>
+						</p>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+	<script src="js/lga.min.js"></script>
+</body>
+
 </html>
